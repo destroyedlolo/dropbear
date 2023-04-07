@@ -27,7 +27,7 @@ ifeq (@BUNDLED_LIBTOM@, 1)
 	LIBTOM_LIBS=$(STATIC_LTC) $(STATIC_LTM)
 endif
 
-OPTION_HEADERS = default_options_guard.h $(srcdir)/sysoptions.h
+OPTION_HEADERS = default_options_guard.h $(srcdir)/sysoptions.h $(srcdir)/Amigalocaloptions.h
 ifneq ($(wildcard ./localoptions.h),)
 	CPPFLAGS+=-DLOCALOPTIONS_H_EXISTS
 	OPTION_HEADERS += ./localoptions.h
